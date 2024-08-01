@@ -8,6 +8,11 @@
 
   <ItemGroup>
     <PackageReference Include="bootstrap" Version="5.3.3" />
+    <PackageReference Include="Font.Awesome" Version="5.15.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\fontawesome\" />
   </ItemGroup>
 
 </Project>
