@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaPresentacionAdmin", "CapaPresentacionAdmin\CapaPresentacionAdmin.csproj", "{B487ED6F-7109-454F-9DC8-D71E0B8B259C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CapaPresentacionAdmin", "CapaPresentacionAdmin\CapaPresentacionAdmin.csproj", "{B487ED6F-7109-454F-9DC8-D71E0B8B259C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaPresentacionBlog", "CapaPresentacionBlog\CapaPresentacionBlog.csproj", "{C934AA4D-B4E4-4128-9908-33A56CC90F57}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CapaPresentacionBlog", "CapaPresentacionBlog\CapaPresentacionBlog.csproj", "{C934AA4D-B4E4-4128-9908-33A56CC90F57}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CapaDatos", "CapaDatos\CapaDatos.csproj", "{DB2C3A8D-2B23-4A8E-B278-CDCDC78FA6D9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CapaEntidad", "CapaEntidad\CapaEntidad.csproj", "{BD644747-7CD4-49BE-B3EB-4CB147915E48}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{C934AA4D-B4E4-4128-9908-33A56CC90F57}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C934AA4D-B4E4-4128-9908-33A56CC90F57}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C934AA4D-B4E4-4128-9908-33A56CC90F57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB2C3A8D-2B23-4A8E-B278-CDCDC78FA6D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB2C3A8D-2B23-4A8E-B278-CDCDC78FA6D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB2C3A8D-2B23-4A8E-B278-CDCDC78FA6D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB2C3A8D-2B23-4A8E-B278-CDCDC78FA6D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD644747-7CD4-49BE-B3EB-4CB147915E48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD644747-7CD4-49BE-B3EB-4CB147915E48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD644747-7CD4-49BE-B3EB-4CB147915E48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD644747-7CD4-49BE-B3EB-4CB147915E48}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
