@@ -34,12 +34,14 @@ namespace CapaEntidad
     public class Categories
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.None)] // La clave primaria no se genera automáticamente
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int Id { get; set; }
 
         [Required]
         [MaxLength(100)]
         public string Name { get; set; }
+
+        public ICollection<Posts> Posts { get; set; }
     }
 }
 /*

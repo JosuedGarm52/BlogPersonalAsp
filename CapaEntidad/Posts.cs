@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -34,5 +36,27 @@ namespace CapaEntidad
      */
     public class Posts
     {
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        public int Id { get; set; }
+
+        [Required]
+        [StringLength(255)]
+        public string Title { get; set; }
+
+        [Required]
+        public string Body { get; set; }
+
+        public int? AuthorId { get; set; }
+        public int? CategoryId { get; set; }
+
+        public DateTime CreatedAt { get; set; } = DateTime.Now;
+        public DateTime UpdatedAt { get; set; } = DateTime.Now;
+
+        // Propiedades de navegación
+        public User Author { get; set; }
+        public Categories Category { get; set; }
+        public ICollection<PostTags> PostTags { get; set; }
+        public ICollection<Comment> Comments { get; set; }
     }
 }

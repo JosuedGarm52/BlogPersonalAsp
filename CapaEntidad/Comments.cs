@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -31,7 +33,24 @@ namespace CapaEntidad
 
     -- --------------------------------------------------------
      */
-    public class Comments
+    public class Comment
     {
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        public int Id { get; set; }
+
+        public int? PostId { get; set; }
+        public int? AuthorId { get; set; }
+
+        [Required]
+        public string Content { get; set; }
+
+        public DateTime? CreatedAt { get; set; } = DateTime.Now;
+
+        [ForeignKey(nameof(PostId))]
+        public virtual Posts Post { get; set; }
+
+        [ForeignKey(nameof(AuthorId))]
+        public virtual User Author { get; set; }
     }
 }
